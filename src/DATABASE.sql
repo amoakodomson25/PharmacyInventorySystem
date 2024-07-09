@@ -13,10 +13,10 @@ CREATE TABLE Agents (
 
 INSERT INTO Agents (Name, Age, Phone, Password, Gender) 
 VALUES (
-    'John', 
+    'User', 
     20, 
     '055-755-6666', 
-    crypt('Am25', gen_salt('bf')), 
+    crypt('Password', gen_salt('bf')), 
     'Male'
 );
 
